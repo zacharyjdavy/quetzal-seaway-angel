@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="fieldwireApp">
+  <head>
+    <title>Fieldwire</title>
+    <script src="/env.js"></script>
+    <link rel="prefetch" href="/../hoops_v2/engine.wasm" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a ui-sref="angularjs" ui-sref-active="active">AngularJS</a></li>
+          <li><a ui-sref="ng2" ui-sref-active="active">Angular 2</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div autoscroll="true" ui-view=""></div>
+  </body>
+</html>

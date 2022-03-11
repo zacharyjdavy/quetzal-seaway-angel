@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "esnext", //compiles the import/export statements to esnext syntax. needed for webpack chunking to work. refer to task #17661 && https://davidea.st/articles/webpack-typescript-code-split-wont-work
+    "moduleResolution": "node", // same as above
+    "strict": true,
+    "target": "es2015",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "sourceMap": false,
+    "baseUrl": ".",
+    "skipLibCheck": true, // node_modules/@types/leaflet/index.d.ts is throwing errors. This is the only we found to ignore them
+    "paths": {
+      "app/*": ["src/app/*"],
+      "bricks/*": ["src/bricks/*"],
+      "javascripts/*": ["app/assets/javascripts/*"],
+      "rfi/*": ["src/rfi/*"],
+      "modals/*": ["src/modals/*"],
+      "models/*": ["src/models/*"],
+      "services/*": ["src/services/*"],
+      "utils/*": ["src/utils/*"],
+      "controllers/*": ["app/assets/javascripts/controllers/*"]
+    }
+  },
+  "typeRoots": ["./typings", "./node_modules/@types", "../node_modules/@types"],
+  "exclude": ["node_modules"],
+  "include": ["**/*"],
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true
+  }
+}

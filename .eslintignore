@@ -1,0 +1,23 @@
+# don't ever lint node_modules
+node_modules
+# don't lint build output (make sure it's set to your correct build folder name)
+dist
+# don't lint nyc coverage output
+coverage
+
+#ignore library code
+typings/hoops/
+src/hoops/custom-operators/forward-translation-operator.ts
+src/hoops/custom-operators/keyboard-walk-operator.ts
+src/hoops/custom-operators/navigation-operator.ts
+src/hoops/custom-operators/orbit-base-operator.ts
+src/hoops/custom-operators/orbit-operator.ts
+src/hoops/custom-operators/simple-walk-operator.ts
+src/hoops/custom-operators/nav-cube-operator.ts
+vendor/
+public/
+
+#ignore framework scripts
+
+# Temp
+typings/index.d.ts

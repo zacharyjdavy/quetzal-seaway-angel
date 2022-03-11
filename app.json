@@ -1,0 +1,153 @@
+{
+  "env": {
+    "AUTH0_CLIENT_ID": {
+      "description": "",
+      "required": true
+    },
+    "AUTH0_DOMAIN": {
+      "description": "",
+      "required": true
+    },
+    "AUTH_RETRIEVE_TOKEN": {
+      "description": "",
+      "required": false,
+      "value": "true"
+    },
+    "AUTH_SENDER_BASE_URL": {
+      "description": "",
+      "required": false,
+      "value": ""
+    },
+    "AUTH_SENDER_URL": {
+      "description": "",
+      "required": false,
+      "value": ""
+    },
+    "CYPRESS_INSTALL_BINARY": {
+      "description": "Disable the installation of Cypress binaries. Not needed on Heroku. https://docs.cypress.io/guides/getting-started/installing-cypress.html#Advanced",
+      "required": false,
+      "value": "0"
+    },
+    "DISABLE_AUTOMATIC_HTTP_RETRY": {
+      "description": "!!! Any none empty value will be considered 'truthy'",
+      "required": false,
+      "value": ""
+    },
+    "DISABLE_TASK_COUNTS": {
+      "description": "!!! Any none empty value will be considered 'truthy'",
+      "required": false,
+      "value": ""
+    },
+    "DISABLE_USER_NOTIFICATIONS": {
+      "description": "!!! Any none empty value will be considered 'truthy'",
+      "required": false,
+      "value": ""
+    },
+    "ENABLE_FORM_CALCULATIONS": {
+      "description": "Enable form calculations",
+      "required": false,
+      "value": "false"
+    },
+    "ENABLE_FORM_DUE_DATE": {
+      "description": "Enable form due date functionality",
+      "required": false,
+      "value": "false"
+    },
+    "ENABLE_FORM_PERMISSIONS": {
+      "description": "Enable view/edit permissions on form templates for project and account",
+      "required": false,
+      "value": "false"
+    },
+    "ENABLE_GENERIC_MARKUP": {
+      "description": "Enable markup on photos across all Fieldwire modules (forms, plans, tasks, etc.)",
+      "required": false,
+      "value": "false"
+    },
+    "FETCH_AUTH_TIMEOUT": {
+      "description": "How long should we wait for the API authenticate the user to return",
+      "required": false,
+      "value": "3000"
+    },
+    "FIELDWIRE_BASE_URL": {
+      "description": "Fieldwire API location",
+      "required": true
+    },
+    "FILEPICKER_API_KEY": {
+      "description": "",
+      "required": true
+    },
+    "HEAP_APP_ID": {
+      "description": "",
+      "required": true
+    },
+    "MIXPANEL_TOKEN": {
+      "description": "",
+      "required": true
+    },
+    "PDFTRON_KEY": {
+      "description": "License key used for the PDFTron library",
+      "required": true
+    },
+    "PRICING_TRIAL_PERIOD_DAYS": {
+      "description": "",
+      "required": true
+    },
+    "REVIT_PLUGIN_URL": {
+      "description": "",
+      "required": true
+    },
+    "ROLLBAR_CLIENT_TOKEN": {
+      "description": "",
+      "required": true
+    },
+    "ROLLBAR_ENVIRONMENT": {
+      "description": "",
+      "required": true
+    },
+    "ROLLBAR_SERVER_TOKEN": {
+      "description": "",
+      "required": true
+    },
+    "SHEET_TILES_CDN_PRIMARY_SUBDOMAIN": {
+      "description": "",
+      "required": true
+    },
+    "SHEET_TILES_CDN_SUBDOMAINS": {
+      "description": "",
+      "required": true
+    },
+    "SHOULD_LOG_ROLLBAR_ISSUES": {
+      "description": "Control if we want to activate rollbar error logging. Any value is truthy",
+      "required": false,
+      "value": "1"
+    },
+    "SIXSENSE_TOKEN": {
+      "description": "",
+      "required": true
+    },
+    "STRIPE_PUBLISHABLE_KEY": {
+      "description": "",
+      "required": true
+    },
+    "TURN_OFF_VIRTUAL_REPEAT_FOR_PLANS": {
+      "description": "",
+      "required": false,
+      "value": "false"
+    },
+    "WEB_GOOGLE_API_KEY": {
+      "description": "",
+      "required": true
+    },
+    "WEB_GOOGLE_CHURN_APP_URL": {
+      "description": "Url of the Google Sheet we use to capture churn feedback",
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "hobby"
+    }
+  },
+  "name": "fieldwire_web_app"
+}
