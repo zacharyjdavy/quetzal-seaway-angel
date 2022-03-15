@@ -1,0 +1,16 @@
+<div class="pdf-viewer-component">
+    <div class="pdf-viewer-error" ng-if="$ctrl.pdfLoadingError">
+        <div>
+            <h3 translate="PLEASE_CHECK_PDF"></h3>
+            <span translate="PDF_VIEWER_LOAD_ERROR"></span>
+        </div>
+    </div>
+</div>
+
+<div class="pdf-viewer-bg" ng-if="$ctrl.isPrompting || $ctrl.isDocumentLoading">
+    <img
+            class="loading-spinner"
+            ng-if="$ctrl.isSaving || $ctrl.isDocumentLoading"
+            ng-src="{{ 'Loading_spinner.svg' | toImagePath }}"
+    />
+</div>

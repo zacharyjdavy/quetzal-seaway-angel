@@ -1,0 +1,16 @@
+<div class="modal-wrapper">
+    <div class="modal-header">
+        <div class="close-modal" ng-click="$ctrl.requestClose()">&times</div>
+        <h1>{{ $ctrl.displayName }}</h1>
+    </div>
+    <pdf-viewer
+            class="modal-body"
+            file-name="$ctrl.fileName"
+            file-url="$ctrl.fileUrl"
+            close-requested="$ctrl.closeRequested"
+            patch-entity="$ctrl.patchEntity(fileUrl, fileSize)"
+            do-resize="$ctrl.doResize()"
+            do-close="$ctrl.doClose()"
+            force-view-only="$ctrl.forceViewOnly"
+    ></pdf-viewer>
+</div>
